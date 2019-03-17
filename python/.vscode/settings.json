@@ -1,0 +1,12 @@
+{
+    "python.linting.pylintEnabled": false,
+    "python.linting.pylamaEnabled": true,
+    "python.linting.enabled": true,
+    "python.unitTest.promptToConfigure": true,
+    "python.unitTest.pyTestEnabled": true,
+    "python.unitTest.unittestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false,
+    "python.unitTest.pyTestArgs": [
+        "."
+    ]
+}
