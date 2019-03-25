@@ -38,6 +38,9 @@ public class Task2 {
       for (Iterator<Passenger> it = queue.iterator(); it.hasNext();) {
         Passenger passenger = it.next();
         LOGGER.info(passenger.toString());
+        if (passenger.weight > Y) { // overweighted passenger block queue
+          return stops;
+        }
         // check if there are spaces and weight limit
         if (numOfPeople < X && weightOfPeople + passenger.weight <= Y) {
           // passenger in elevator
